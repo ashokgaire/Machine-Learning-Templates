@@ -58,10 +58,9 @@ y_pred = regressor.predict(X_test)
 import statsmodels.api as sm
 X = np.append(arr = np.ones((50,1)).astype(int),  values=X ,  axis = 1)
 
-# step 1:
+
 X_opt = X[:, [0,1,2,3,4,5]]  # all of them
 
-#step 2:
 regressor_OLS = sm.OLS(endog =Y , exog =X_opt ).fit()
 regressor_OLS.summary()
 X_opt = X[:, [0,1,3,4,5]]
@@ -78,76 +77,7 @@ regressor_OLS = sm.OLS(endog=Y, exog = X_opt).fit()
 regressor_OLS.summary()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-############################Theories#############################################
+                ############################   Theories    #############################################
 
 
 
@@ -157,7 +87,7 @@ regressor_OLS.summary()
   equation : y = bo + b1x1 + b2x2 ---+ bnxn
 
 
-     ######################### Backward Elimination ---###############################################
+     ######################### Backward Elimination ###############################################
      
      step 1: select a significance level to stay in the model (eg SL = 0.05)
      setp 2: fit the full model with all possible predictors
@@ -185,7 +115,7 @@ regressor_OLS.summary()
      step 3: perform all steps of Backward Elimination ( old variables must have P < SLSTAY to stay )
      step 4: NO new variables can enter and no odd variabes can exit.
      
-     '''
+'''
      
      
      
