@@ -12,11 +12,6 @@ X = datasets.iloc[:, 2:4].values
 Y = datasets.iloc[:,4].values
 
 
-#Enoding categorical data
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-from sklearn.compose import ColumnTransformer
-labelencoder_X = LabelEncoder()
-X[:, 0] = labelencoder_X.fit_transform(X[:, 0])
 
 #spliting the data into train and test sets
 from sklearn.model_selection import train_test_split

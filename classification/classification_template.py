@@ -31,7 +31,9 @@ X_test = sc_X.fit_transform(X_test)
 
 
 #### fiting  the classifier to the  training set
-#Create your classifier here
+from sklearn.linear_model import LogisticRegression
+classifier = LogisticRegression(random_state = 0)
+classifier.fit(X_train, Y_train)
 
 
 # predicting the Test set results
