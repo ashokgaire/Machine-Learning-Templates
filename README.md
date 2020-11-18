@@ -1,4 +1,4 @@
-### Machine Learning Templates in python with exampe
+### Machine Learning Templates in python with example
 
 
 ## How to use ??
